@@ -3,13 +3,17 @@
 ## Key Technologies & Frameworks
 
 - Javascript, from the inside out, since the early days to the latest specs / apis.
-- Typescript
+- Typescript,
 - React, from early versions up to the latest v18 specs.
 - CSS, in full depth, and many of its dialects: sass, less,...
 - HTML, also in full depth, and many of its dialects: pug/jade, jsx, tsx...
 - React libraries: UI Components, state managers, routing frameworks,
+- React internal APIs: Context, Providers, Suspense/Fallback,
 - Nodejs, also extensively used. To define APIs, services, or just any kind of application.
-- Git: as the holy grail of code management.
+- Git: as the holy grail of code management. Git Flow, as methodology.
+- GraphQL, Apollo server.
+- MongoDB, Redis, ... (noSQL databases, document oriented)
+- PosgreSQL, mysql, and more generally Relational Databases.
 - CI/CD, using many tools from jenkins to travis, until most recently github actions and workflows.
 - Testing: Jest, react testing library, cypress for e2e testing, pact.js for integration testing.
 - Bundlers & Pipelines, from Webpack v5, esbuild. Federated modules, monorepos with Lerna, and Turbo.
@@ -17,59 +21,63 @@
 - Architecture management with Kubernetes.
 
 ## Extract
-Computing and programming passionate.
 
-The web FrontEnd area is my is my strongest skill, the one I've focused on the most throughout my career, but not the only. I have extensive knowledge on all the aspects related to web applications, from the ui to the backend, api's, data, networking / performance, ci/cd, infrastructure, and the main providers.
+Computing and programming passionate, my favourite distraction that is algorithms and programming has been my professional career.
 
-From my engineering background, I have had always the need to know how everything worked, how the different parts worked together to produce the things we
+The web and specifically FrontEnd area is my strongest skill, and also my most professionally developed area. I have extensive knowledge on all the aspects related to web applications, from the ui to the backend, api's, data, networking / performance, ci/cd, infrastructure, and the main cloud providers.
 
+From my engineering background, I always had the drive to understand the underlying mechanisms in computing, which were also my funniest hobbies to practise.
 
-Professionally, not only I have been in several companies, each in its own universe, but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve a customer's particular needs.
+Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve a customer's particular needs.
 
 From the requirements definition, to drafting an entity relationship model. Discussing what storage technologies would be adequate, relational, non-relational, graph based. Defining a Restful API contract, implementing it using any technology.
 Designing a user interface aiming at the best possible user experience, adapted to the technology needs: desktop, mobile.
 Defining the whole architecture on the cloud: what servers are needed, and what capacity are they going to support. It could be that a frontend is served from an edge CDN, while the backend is isolated from the internet and the public access point is a load balancer to distribute the load. AWS, Google cloud platform, Azure, Firebase, Digitalocean. They all do basically the same thing, but normally the choice depends on the requirements of the customer. (They may already have a contract with Microsoft, or with Google Apps...).
 
-## Codes
-
-Things I made, borrowed, want to learn, or just felt the need kept secure.
-
-https://github.com/weisk
-https://gist.github.com/weisk
-https://gitlab.com/weisk
-https://bitbucket.org/franml/
-https://jsfiddle.net/user/weisk/fiddles/
-https://codepen.io/weisk/
-https://codesandbox.io/u/weisk/sandboxes
 
 ## WORK EXPERIENCE
 
-### Freelance Web Developer Jan 2010 - Present
+### Adevinta : Senior Frontend Engineer, Jul 2021 - November 2023
 
-I have been fiddling with web technologies since very young, becoming more experienced through the
-years and later accepting private contracts with clients. In the projects section you can see a portfolio of
-products built.
-More details can be found in the Projects section of this resume.
+I have been working for 2+ years in Adevinta as a frontend engineer. My main occupations and duties have been to develop and modernize the UIs of the company, in particular the platforms used internally across all departments of Adevinta. To further explain, there are many departments within Adevinta, but all of them orbit around the same segment: online 2nd hand Marketplaces. Think of ebay, as an example. There are many different markets / brands on many countries, but all of them use the same internal tooling for the biggest problem they all have in common: the fight against spam or fraudulent content.
 
-### Software Engineer Sep 2019 - Present
-marketScape.com
-Crawling the internet, in order to collect data about specific topics from different sources. Normalize,
-analysis and synthesis of this date, in order to find and group differentiative elements from that topic. A
-topic can be anything: fashion market trends, consumption of alcohol, music reproductions, drug
-consumption, religious fanatism.
+So, in our department we developed and maintained the tools that all marketplaces use in order to moderate content, before being published to the world. To do this, there are a series of machine learning modules, that analyze the content from different perspectives, and assign a score or probability that that content is not legitimate. From analyzing the text content, to find forbidden patterns like URLs, emails, etc., through processing the images, to a drag&drop rule engine that allows the moderators to define complex heuristics to mark content as spam or not.
+
+The main target of my team was to maximise the amount of content that gets automatically moderated. There are some configurable ratios that allow you to define which percentage of probability can be automatically processed, and which percentage is not clear enough so that it goes to a manual moderation.
+
+Well, all this platform is streamline and offered in a web interface that allows you to tweak each module, and that has been my main focus.
+
+One of my biggest and most challenging projects I've faced is this: to migrate an old architecture of a series of micro apps, in different repositories, into a monorepo that contains everything within. From shared libraries, like the UI components, common libraries for certain functionalities, and the different modules that comprise each route.
+
+There is one main React app wrapper, the Shell, that does all the necessary imports and defines the routes, and then all the different modules: shared components, libs, and modules. There is a main bundle that contains the shell, and the minimum required components to render the app, and then all the modules are lazy-loaded on demand through dynamic imports.
+
+It is all coded through the latest standards and specs, sharing all the same type definitions, and the versioning is done with lerna/nx per package.
+
+All testing is also handled through the same monorepo, using react testing library and cypress, and all handled through github actions workflows.
+
+Another big project I handled during my time here was, refactoring all 3rd party api calls into a main single API implemented with GraphQL, and the Apollo framework. This in itself is a huge different topic that deserves another full document, but to not extend myself too much, I will just outline the main points of it:
+
+  - Defines an API for all XHR calls the frontend needs,
+  - Unifies all of them in the same graphql server,
+  - going through the same security checks on every request, like, Authentication, and Authorisation,
+  - shares the Data Types with the frontend monorepo, in Typescript,
+  - Integrates the external calls made to all 'real backend' machine-learning modules, which are mostly Python services.
+
+
+### marketScape.com : Software Engineer Sep 2019 - Present
+
+Crawling the internet, in order to collect data about specific topics from different sources. Normalize, analysis and synthesis of this data, in order to find and group differentiative elements from that topic. A topic can be anything: fashion market trends, consumption of alcohol, music reproductions, drug consumption, religious fanatism.
 Sources can be anything that feeds data from the public, social networks, polls, reports.
 So depending on every use case, the election of sources and topics can deliver the following:
 - Gain advantadge over the competence by reacting fast.
 - Iterate on the data, decide business strategy based on it.
 - Detect criminal groups, isolate hot spots of activity, find bad people.
-My role here is not only frontend but also architect of the different parts of the software. My main expertise
-and where I focused more is on the frontend layer, using angular8 , make a less monolithic structure.
-However I also helped to migrate towards a micro-services-oriented API , contributed on better ways to
-store and fetch the data, how to design the algorithmics for the web spiders, as well as dev-ops tasks like
-making the develop - test - deploy cycle simpler and faster.
 
-### Senior Frontend Developer Feb 2019 - Aug 2019
-Kasaz.com
+My role here is not only frontend but also architect of the different parts of the software. My main expertise and where I focused more is on the frontend layer, using angular8 , make a less monolithic structure.
+However I also helped to migrate towards a micro-services-oriented API , contributed on better ways to store and fetch the data, how to design the algorithmics for the web spiders, as well as dev-ops tasks like making the develop - test - deploy cycle simpler and faster.
+
+### Kasaz.com : Senior Frontend Developer Feb 2019 - Aug 2019
+
 Joined this little startup that aims at the real estate sector in Barcelona, bringing fresh and innovative ideas.
 My task has been to boost the front part of the site's visibility and quality, using my acquired skills over the
 years. So after some study, I designed a plan.
@@ -84,12 +92,12 @@ else, so that users don't look cluttered, and it doesn't cause distractions.
 SEO: Try to follow all the standards and guides provided by search engines. Eliminate all penalising things, or
 things that make the search engine think you are cheating, like for example, hidden texts, duplicate url's, etc..
 
-### Senior Frontend Developer Oct 2017 - Nov 2018
-Haufe-Umantis AG
+### Haufe-Umantis AG Swiss : Senior Frontend Developer Oct 2017 - Nov 2018
+
 Working as a frontend developer expert in technologies such as React (+Redux,Router,..) and Angular(1,2,4).
 
-### Senior Frontend Developer Feb 2016 - Mar 2017
-Propertyfinder.ae
+### Propertyfinder : Senior Frontend Developer Feb 2016 - Mar 2017
+
 Propertyfinder is a leading real estate company in Dubai. The company specializes in putting in touch sellersThis resume is made with CVwizard.com.
 with buyers, through a web platform. It's free for clients to register on the website, however ad publishers
 have to pay a monthly subscription to be able to post their ads. There are different subscription tiers, from
@@ -116,27 +124,12 @@ after 2 months the team lead was promoted to CTO and I, in turn, to the frontend
 manage the 3 developers work, we used Pivotal as a time tracker / task organiser. We did daily SCRUM
 meetings and weekly reports of team performance.
 
-### Co-founder / Frontend Lead Jan 2015 - April 2017
-Medbrain
-I founded a company with an ambitious project in mind. Medbrain was meant to be a healthcare
-knowledge sharing platform and social network.
-Medical students would get access to quality information and knowledge, and healthcare professionals
-could keep up with the latest improvements. It was designed to split the knowledge in all areas of the
-medicine, from a top-bottom perspective, and split by the different approaches it may have: Medical,
-Surgical, Biomedical, Pharmacological, and Physiological. It would offer 3 main areas:
-1.- A social Wall for each medical specialisation, where users could post and ask about anything related to
-that area.
-2.- A knowledge encyclopedia, built by all users, with an edition / submission / approval system similar to
-wikipedia.
-3.- A learning section, which would offer exercises to train on that particular area. This area would also be
-extended on a later stage to also allow universities to evaluate their students.
-I was the only front-end developer for the whole time. We achieved an alpha prototype, even launched a
-private beta for one university. Later on, as we received funding, I was kicked out of the project; in short, there
-was a big disagreement between me and the other 2 developers. The CEO had to choose between keeping
-me or the other 2 developers. A more thorough explanation can be provided, if needed.
 
-### Front End Lead Developer Mar 2014 - Dec 2014
-Cloud Digital
+
+
+
+### Cloud Digital: Front End Lead Developer Mar 2014 - Jan 2015
+
 In charge of the development of the front-end of a media distribution platform. Built on top of Angular.JS,
 Bootstrap for the layout and Google Material for design components. Using Coffeescript to produce quality
 Javascript code. Bower for dependency management. Grunt for wiring assets and libraries, building and
@@ -151,8 +144,8 @@ Integrated a error tracking & logging system based on Sentry using its javascrip
 managed to log all javascript errors to an interface knowing all the debug info: error culprit, logged user,
 referrer URL, server response, along with the javascript stack trace.
 
-### Javascript Developer Aug 2013 - Nov 2013
-Scytl Electronic Voting
+### Scytl: Javascript Developer Aug 2013 - Jan 2014
+
 Worked as a FrontEnd Javascript developer, using mainly Angular.js , jQuery , underscore and more libraries.
 Hired for a 4 month project, which was an online electronic voting system for the country of Ecuador. I was
 given the opportunity to continue but I had to decline due to my studies in computer engineering, which
@@ -162,8 +155,8 @@ as private/privileged/public members, first-class citizen functions ...Implement
 controllers,views and models, with all the benefits Angular.js has to offer: two-way data binding, custom
 directives for extended HTML, live page updates, back-end communitaction ... etc
 
-### Back & Front End Technology Programmer Jul 2011 - Jan 2013
-Roche Diagnostics S.L.
+### Roche Diagnostics S.L.: Front End Technology Programmer (Jul 2011 - Jan 2013)
+
 Working on a Laboratory Information System (LIS) for hospitals, intended to manage everything that
 happens on a hospital. From patients and the tests they have to take, the tubes and samples each test
 takes, doctor scheduling, all work places, interfacing with the diagnostic equipment and the hospital
@@ -181,22 +174,8 @@ As from code source control, using Microsoft's Team Foundation Server and Perfor
 
 ## PROJECTS
 
-### Orinocco
-B2b platform that enables business owners to quickly setup custom e-commerces. In this project I worked
-on the whole mobile UI, focusing on user experience but leveraging existing APIs and storage layers.
-Mis derechos en la red
-This was a Typeform-like survey app, commissioned from a non profit public organisation, funded by the "
-Comunidad de Madrid". It is mainly a mobile interactive quiz, meant to look appealing to the younger
-generations, with alot of focus on visual attractiveness while mantaining fluidity. The project was online for
-as long as the campaign lasted, so it cannot be checked anymore, although I can provide code or even
-showcase the app running locally. The organization is https://plataformadeinfancia.org/.
-Aurepdos
-This is a company that creates sensor panels, aimed for industrial applications that require a high volume
-of data monitoring. During my phase we were focusing on industrial clothes cleaning automated trains. The
-project was to develop an inhouse dashboard, to be able to display tons of metrics coming from the data
-layer, where customers could then print out customized reports , and display many visual representations
-out of the data.
-
+I have been fiddling with web technologies since very young, becoming more experienced through the
+years and later accepting gigs and contracts with clients. In the projects section you can see a portfolio of products I built, mainly as a freelancer or some of them as a cofounder.
 
 ### https://raiseyourwebsite.com
 This is a personal project, in collaboration with a designer partner, using cutting edge technologies: It's an
@@ -231,6 +210,18 @@ domains, providing valuable data as to increase search engine presence and user 
 Several private projects
 Worked on internal managing webapps, from ERP and CRM to CMS-type projects. More info available on
 request.
+
+## Codes
+
+Things I made, borrowed, want to learn, or just felt the need kept secure.
+
+https://github.com/weisk
+https://gist.github.com/weisk
+https://gitlab.com/weisk
+https://bitbucket.org/franml/
+https://jsfiddle.net/user/weisk/fiddles/
+https://codepen.io/weisk/
+https://codesandbox.io/u/weisk/sandboxes
 
 ## EDUCATION
 

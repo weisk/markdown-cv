@@ -84,6 +84,8 @@ My role here is was implementing the frontend, and designing the architecture fo
 
 I also work on abstracting inefficient legacy implementations into micro-services oriented API, that could come in NodeJS simple apps, to stateless Lambda functions.
 
+<br/>
+
 `Feb 2019 - Aug 2019`
 __Kasaz.com__
 

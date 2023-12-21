@@ -211,16 +211,10 @@ This is equivalent to the current Degree + Master.
 
 Things I made, borrowed, want to learn, or just felt the need kept secure.
 
-- https://github.com/weisk
-
-- https://gist.github.com/weisk
-
-- https://gitlab.com/weisk
-
-- https://bitbucket.org/franml/
-
-- https://jsfiddle.net/user/weisk/fiddles/
-
-- https://codepen.io/weisk/
-
-- https://codesandbox.io/u/weisk/sandboxes
+1. [github](https://github.com/weisk)
+1. [gist](https://gist.github.com/weisk)
+1. [gitlab](https://gitlab.com/weisk)
+1. [bitbucket](https://bitbucket.org/franml/)
+1. [jsfiddle](https://jsfiddle.net/user/weisk/fiddles/)
+1. [codepen](https://codepen.io/weisk/)
+1. [codesandbox](https://codesandbox.io/u/weisk/sandboxes)

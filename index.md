@@ -11,11 +11,17 @@ The web and specifically FrontEnd area is my strongest skill, and also my most p
 
 Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve each particular problem..
 
+## Contacts
+
+__franml87@gmail.com__
+
+__(+34) 632 928 866__
+
 <!-- Having an engineering background, I always had the drive to understand the underlying mechanisms in computing, which always amazed me. To this day I still wonder at the complexity of mechanisms in internet, and how it's even possible that everything works! -->
 
 <!-- From the requirements definition, to drafting an entity relationship model. Designing the Data structures, and deciding if it would make sense to make it relational, non-relational, graph based. Defining API contracts, in order for the different components to collaborate. Designing cloud architectures: what kind of servers are needed, and what capacity are they going to support. Would it require servers, or could it be served from a CDN. Would it require scalability, thus then load balancing policies, and virtual net infrastructure. Using the major providers, that is AWS, Google cloud platform, Azure, Firebase, Digitalocean. -->
 
-### Specialized on
+## Specialized on
 
 - Javascript, from the inside out, since ES3 to latest specs
 - Typescript, for type sharing, compile-time errors, and all the goodies
@@ -209,12 +215,12 @@ This is equivalent to the current Degree + Master.
 
 ## Codes
 
-Things I made, borrowed, want to learn, or just felt the need kept secure.
+Things I made, borrowed, want to learn, or just felt the need to keep secure.
 
-1. [github](https://github.com/weisk)
-1. [gist](https://gist.github.com/weisk)
-1. [gitlab](https://gitlab.com/weisk)
-1. [bitbucket](https://bitbucket.org/franml/)
-1. [jsfiddle](https://jsfiddle.net/user/weisk/fiddles/)
-1. [codepen](https://codepen.io/weisk/)
-1. [codesandbox](https://codesandbox.io/u/weisk/sandboxes)
+- github.com/weisk
+- gist.github.com/weisk
+- gitlab.com/weisk
+- bitbucket.org/franml/
+- jsfiddle.net/user/weisk/fiddles/
+- codepen.io/weisk/
+- codesandbox.io/u/weisk/sandboxes

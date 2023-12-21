@@ -157,7 +157,7 @@ Full migration from a .NET client/server architecture, to web-based architecture
 compliant. Design of screens , tables, gadgets , graphics , charts , etc.. for the application , mainly using the combination of HTML5/CSS3 & javascript, SVG .
 
 
-## PROJECTS
+<!-- ## PROJECTS
 
 I have been fiddling with web technologies since very young, becoming more experienced through the
 years and later accepting gigs and contracts with clients. In the projects section you can see a portfolio of products I built, mainly as a freelancer or some of them as a cofounder.
@@ -194,7 +194,7 @@ analytics, SEO all around product. With a subscription model type, users could g
 domains, providing valuable data as to increase search engine presence and user visitors.
 Several private projects
 Worked on internal managing webapps, from ERP and CRM to CMS-type projects. More info available on
-request.
+request. -->
 
 
 ## Education

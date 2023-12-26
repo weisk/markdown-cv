@@ -17,6 +17,8 @@ __franml87@gmail.com__
 
 __(+34) 632 928 866__
 
+__linkedin.com/in/weisk__
+
 <!-- Having an engineering background, I always had the drive to understand the underlying mechanisms in computing, which always amazed me. To this day I still wonder at the complexity of mechanisms in internet, and how it's even possible that everything works! -->
 
 <!-- From the requirements definition, to drafting an entity relationship model. Designing the Data structures, and deciding if it would make sense to make it relational, non-relational, graph based. Defining API contracts, in order for the different components to collaborate. Designing cloud architectures: what kind of servers are needed, and what capacity are they going to support. Would it require servers, or could it be served from a CDN. Would it require scalability, thus then load balancing policies, and virtual net infrastructure. Using the major providers, that is AWS, Google cloud platform, Azure, Firebase, Digitalocean. -->

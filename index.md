@@ -13,11 +13,11 @@ Professionally I have worked in many companies, each one of them being like a di
 
 ## Contacts
 
-__franml87@gmail.com__
+__[franml87@gmail.com](mailto://franml87@gmail.com)__
 
 __(+34) 632 928 866__
 
-__linkedin.com/in/weisk__
+__[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 <!-- Having an engineering background, I always had the drive to understand the underlying mechanisms in computing, which always amazed me. To this day I still wonder at the complexity of mechanisms in internet, and how it's even possible that everything works! -->
 
@@ -34,8 +34,9 @@ __linkedin.com/in/weisk__
 - React internal APIs: Context, Providers, Suspense/Fallback,
 - Nodejs, also extensively used. To define APIs, services, or just any kind of application.
 - Git: as the holy grail of code management. Git Flow, as methodology.
+- Unix, as my mother tongue.
 - Could providers, network architecture and security protocols. AWS, GCP, azure, DO...
-- GraphQL, Apollo server.
+- GraphQL, Apollo server
 - MongoDB, Redis, ... (noSQL databases, document oriented)
 - PosgreSQL, mysql, and more generally Relational Databases.
 - CI/CD, using many tools from jenkins to travis, until most recently github actions and workflows.
@@ -68,11 +69,10 @@ The CI/CD is implemented in different layers, of testing (react testing library,
 
 Another big project I handled during my time here was, refactoring all 3rd party api calls into a main single API implemented with GraphQL, and the Apollo framework. This in itself is a huge different topic that deserves another full document, but to not extend myself too much, I will just outline the main points of it:
 
-  - Defines an API for all XHR calls the frontend needs,
-  - Unifies all of them in the same graphql server,
-  - going through the same security checks on every request, like, Authentication, and Authorisation,
-  - shares the Data Types with the frontend monorepo, in Typescript,
-  - Integrates the external calls made to all 'real backend' machine-learning modules, which are mostly Python services.
+  - Defines a single gateway between the internet and all the internal APIs
+  - Centralizes all 3rd party APIs into a single one,
+  - Acts as the main security layer, with Authentication and Authorisation layers
+  - Provides a single source of truth for the data shape, through the graphql type system, which is mapped directly to a typescript type definition
 
 
 `Sep 2019 - Dec 2020`

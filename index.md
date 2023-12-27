@@ -45,6 +45,7 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 - Containerised environments with Docker, compose.
 - Architecture management with Kubernetes.
 
+<br/>
 
 ## Experience
 
@@ -74,6 +75,7 @@ Another big project I handled during my time here was, refactoring all 3rd party
   - Acts as the main security layer, with Authentication and Authorisation layers
   - Provides a single source of truth for the data shape, through the graphql type system, which is mapped directly to a typescript type definition
 
+<br/>
 
 `Sep 2019 - Dec 2020`
 __marketScape__
@@ -107,6 +109,8 @@ __Haufe-Umantis AG Swiss__
 *Senior Frontend Developer*
 
 Working as a frontend developer expert in technologies such as React (+Redux,Router,..) and Angular(1,2,4).
+
+<br/>
 
 `Feb 2016 - Mar 2017`
 __Propertyfinder__

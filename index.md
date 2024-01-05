@@ -43,7 +43,7 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 - Testing: Jest, react testing library, cypress for e2e testing, pact.js for integration testing.
 - Bundlers & Pipelines, from Webpack v5, esbuild. Federated modules, monorepos with Lerna, and Turbo.
 - Containerised environments with Docker, compose.
-- Architecture management with Kubernetes.
+- Infra/devops with Kubernetes, k8s cli.
 
 <br/>
 

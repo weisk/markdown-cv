@@ -45,7 +45,6 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 - Containerised environments with Docker, compose.
 - Infra/devops with Kubernetes, k8s cli.
 
-<br/>
 
 ## Experience
 
@@ -75,7 +74,6 @@ Another big project I handled during my time here was, refactoring all 3rd party
   - Acts as the main security layer, with Authentication and Authorisation layers
   - Provides a single source of truth for the data shape, through the graphql type system, which is mapped directly to a typescript type definition
 
-<br/>
 
 `Sep 2019 - Dec 2020`
 __marketScape__
@@ -87,8 +85,6 @@ This is a saas used for gathering and collecting data, in order to gain intellig
 My role here is was implementing the frontend, and designing the architecture for new features. A big chunk of my work was porting an outdated server-side rendered architecture to a more modular, interactive webapp. Using angular since that was a client requirement.
 
 I also work on abstracting inefficient legacy implementations into micro-services oriented API, that could come in NodeJS simple apps, to stateless Lambda functions.
-
-<br/>
 
 `Feb 2019 - Aug 2019`
 __Kasaz.com__
@@ -110,7 +106,6 @@ __Haufe-Umantis AG Swiss__
 
 Working as a frontend developer expert in technologies such as React (+Redux,Router,..) and Angular(1,2,4).
 
-<br/>
 
 `Feb 2016 - Mar 2017`
 __Propertyfinder__

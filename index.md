@@ -11,11 +11,19 @@ The web and specifically FrontEnd area is my strongest skill, and also my most p
 
 Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve each particular problem..
 
+## Contacts
+
+__[franml87@gmail.com](mailto://franml87@gmail.com)__
+
+__(+34) 632 928 866__
+
+__[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
+
 <!-- Having an engineering background, I always had the drive to understand the underlying mechanisms in computing, which always amazed me. To this day I still wonder at the complexity of mechanisms in internet, and how it's even possible that everything works! -->
 
 <!-- From the requirements definition, to drafting an entity relationship model. Designing the Data structures, and deciding if it would make sense to make it relational, non-relational, graph based. Defining API contracts, in order for the different components to collaborate. Designing cloud architectures: what kind of servers are needed, and what capacity are they going to support. Would it require servers, or could it be served from a CDN. Would it require scalability, thus then load balancing policies, and virtual net infrastructure. Using the major providers, that is AWS, Google cloud platform, Azure, Firebase, Digitalocean. -->
 
-### Specialized on
+## Specialized on
 
 - Javascript, from the inside out, since ES3 to latest specs
 - Typescript, for type sharing, compile-time errors, and all the goodies
@@ -26,15 +34,16 @@ Professionally I have worked in many companies, each one of them being like a di
 - React internal APIs: Context, Providers, Suspense/Fallback,
 - Nodejs, also extensively used. To define APIs, services, or just any kind of application.
 - Git: as the holy grail of code management. Git Flow, as methodology.
+- Unix, as my mother tongue.
 - Could providers, network architecture and security protocols. AWS, GCP, azure, DO...
-- GraphQL, Apollo server.
+- GraphQL, Apollo server
 - MongoDB, Redis, ... (noSQL databases, document oriented)
 - PosgreSQL, mysql, and more generally Relational Databases.
 - CI/CD, using many tools from jenkins to travis, until most recently github actions and workflows.
 - Testing: Jest, react testing library, cypress for e2e testing, pact.js for integration testing.
 - Bundlers & Pipelines, from Webpack v5, esbuild. Federated modules, monorepos with Lerna, and Turbo.
 - Containerised environments with Docker, compose.
-- Architecture management with Kubernetes.
+- Infra/devops with Kubernetes, k8s cli.
 
 
 ## Experience
@@ -60,11 +69,10 @@ The CI/CD is implemented in different layers, of testing (react testing library,
 
 Another big project I handled during my time here was, refactoring all 3rd party api calls into a main single API implemented with GraphQL, and the Apollo framework. This in itself is a huge different topic that deserves another full document, but to not extend myself too much, I will just outline the main points of it:
 
-  - Defines an API for all XHR calls the frontend needs,
-  - Unifies all of them in the same graphql server,
-  - going through the same security checks on every request, like, Authentication, and Authorisation,
-  - shares the Data Types with the frontend monorepo, in Typescript,
-  - Integrates the external calls made to all 'real backend' machine-learning modules, which are mostly Python services.
+  - Defines a single gateway between the internet and all the internal APIs
+  - Centralizes all 3rd party APIs into a single one,
+  - Acts as the main security layer, with Authentication and Authorisation layers
+  - Provides a single source of truth for the data shape, through the graphql type system, which is mapped directly to a typescript type definition
 
 
 `Sep 2019 - Dec 2020`
@@ -97,6 +105,7 @@ __Haufe-Umantis AG Swiss__
 *Senior Frontend Developer*
 
 Working as a frontend developer expert in technologies such as React (+Redux,Router,..) and Angular(1,2,4).
+
 
 `Feb 2016 - Mar 2017`
 __Propertyfinder__
@@ -157,7 +166,7 @@ Full migration from a .NET client/server architecture, to web-based architecture
 compliant. Design of screens , tables, gadgets , graphics , charts , etc.. for the application , mainly using the combination of HTML5/CSS3 & javascript, SVG .
 
 
-## PROJECTS
+<!-- ## PROJECTS
 
 I have been fiddling with web technologies since very young, becoming more experienced through the
 years and later accepting gigs and contracts with clients. In the projects section you can see a portfolio of products I built, mainly as a freelancer or some of them as a cofounder.
@@ -194,7 +203,7 @@ analytics, SEO all around product. With a subscription model type, users could g
 domains, providing valuable data as to increase search engine presence and user visitors.
 Several private projects
 Worked on internal managing webapps, from ERP and CRM to CMS-type projects. More info available on
-request.
+request. -->
 
 
 ## Education
@@ -209,18 +218,12 @@ This is equivalent to the current Degree + Master.
 
 ## Codes
 
-Things I made, borrowed, want to learn, or just felt the need kept secure.
+Things I made, borrowed, want to learn, or just felt the need to keep secure.
 
-- https://github.com/weisk
-
-- https://gist.github.com/weisk
-
-- https://gitlab.com/weisk
-
-- https://bitbucket.org/franml/
-
-- https://jsfiddle.net/user/weisk/fiddles/
-
-- https://codepen.io/weisk/
-
-- https://codesandbox.io/u/weisk/sandboxes
+- github.com/weisk
+- gist.github.com/weisk
+- gitlab.com/weisk
+- bitbucket.org/franml/
+- jsfiddle.net/user/weisk/fiddles/
+- codepen.io/weisk/
+- codesandbox.io/u/weisk/sandboxes

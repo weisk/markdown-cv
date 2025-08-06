@@ -11,11 +11,11 @@ The web and specifically FrontEnd area is my strongest skill, and also my most p
 
 Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve each particular problem..
 
-## Contacts
+## Contact me
 
 __[franml87@gmail.com](mailto://franml87@gmail.com)__
 
-__(+34) 632 928 866__
+<a href="tel:+34632928866">__(+34) 632 928 866__</a>
 
 __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
@@ -25,16 +25,16 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 ## Specialized on
 
-- Javascript, from the inside out, since ES3 to latest specs
+- Javascript, from the inside out, since ES3 to latest specs: async, proxies, modules, lazy loading..
 - Typescript, for type sharing, compile-time errors, and all the goodies
-- React, from early declarative, through classful, to beautiful functional stateless components
+- React, from early declarative, through classful, to compact functional stateless components. Hooks, effects, providers, ...
 - CSS, in full depth, and many of its dialects: sass, less,...
 - HTML, also in full depth, and many of its dialects: pug/jade, jsx, tsx...
 - React libraries: UI Components, state managers, routing frameworks,
 - React internal APIs: Context, Providers, Suspense/Fallback,
 - Nodejs, also extensively used. To define APIs, services, or just any kind of application.
-- Git: as the holy grail of code management. Git Flow, as methodology.
-- Unix, as my mother tongue.
+- Git,  as the holy grail of code management. Git Flow, as methodology.
+- Linux is the only possible environment when developing, be it native or wsl2
 - Could providers, network architecture and security protocols. AWS, GCP, azure, DO...
 - GraphQL, Apollo server
 - MongoDB, Redis, ... (noSQL databases, document oriented)
@@ -48,7 +48,14 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 ## Experience
 
-`Jul 2021 - November 2023`
+`Feb 2024 - Nov `
+__Videocation__
+
+*Senior Frontend Engineer*
+
+
+
+`Jul 2021 - Dec 2023`
 __Adevinta__
 
 *Senior Frontend Engineer*

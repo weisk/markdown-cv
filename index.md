@@ -48,11 +48,26 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 ## Experience
 
-`Feb 2024 - Nov `
+`Jun 2024 - Present`
+__Sabatical__
+
+After transitioning from a well-established company to a fast-paced startup, unexpected internal changes led to my role not being extended beyond the trial period. I'm happy to provide further context if needed.
+
+I took this as a clear sign to pause and reflect. Having worked non-stop throughout my adult life, I took this moment as an opportunity to reconnect with myself, restore my inner peace, and focus on long-neglected personal goals—like home renovations, completing long-standing freelance projects, and also finally reading the books I had been piling up for years.
+
+Lately I'm feeling refreshed and with full energy, and I'm so looking forward to jump on my next professional challenge.
+
+
+`Feb 2024 - Jun 2024 `
 __Videocation__
 
 *Senior Frontend Engineer*
 
+I joined as a full-stack web engineer with a strong focus on frontend development, while also contributing across the stack—common in a small, all-hands-on-deck team.
+
+The frontend was built with React (Next.js) and Vite, styled using Tailwind CSS. On the backend, the architecture relied heavily on AWS services: DynamoDB (document-oriented), a smaller RDS instance, and numerous Lambda functions for isolated business logic. CloudFront handled networking and content delivery.
+
+CI/CD pipelines were managed via a private GitHub instance tightly integrated with the deployment process.
 
 
 `Jul 2021 - Dec 2023`

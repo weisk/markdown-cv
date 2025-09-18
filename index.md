@@ -11,11 +11,11 @@ The web and specifically FrontEnd area is my strongest skill, and also my most p
 
 Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve each particular problem..
 
-## Contacts
+## Contact me
 
 __[franml87@gmail.com](mailto://franml87@gmail.com)__
 
-__(+34) 632 928 866__
+<a href="tel:+34632928866">__(+34) 632 928 866__</a>
 
 __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
@@ -25,16 +25,16 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 ## Specialized on
 
-- Javascript, from the inside out, since ES3 to latest specs
+- Javascript, from the inside out, since ES3 to latest specs: async, proxies, modules, lazy loading..
 - Typescript, for type sharing, compile-time errors, and all the goodies
-- React, from early declarative, through classful, to beautiful functional stateless components
+- React, from early declarative, through classful, to compact functional stateless components. Hooks, effects, providers, ...
 - CSS, in full depth, and many of its dialects: sass, less,...
 - HTML, also in full depth, and many of its dialects: pug/jade, jsx, tsx...
 - React libraries: UI Components, state managers, routing frameworks,
 - React internal APIs: Context, Providers, Suspense/Fallback,
 - Nodejs, also extensively used. To define APIs, services, or just any kind of application.
-- Git: as the holy grail of code management. Git Flow, as methodology.
-- Unix, as my mother tongue.
+- Git,  as the holy grail of code management. Git Flow, as methodology.
+- Linux is the only possible environment when developing, be it native or wsl2
 - Could providers, network architecture and security protocols. AWS, GCP, azure, DO...
 - GraphQL, Apollo server
 - MongoDB, Redis, ... (noSQL databases, document oriented)
@@ -48,7 +48,29 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 
 ## Experience
 
-`Jul 2021 - November 2023`
+`Jun 2024 - Present`
+__Sabatical__
+
+After transitioning from a well-established company to a fast-paced startup, unexpected internal changes led to my role not being extended beyond the trial period. I'm happy to provide further context if needed.
+
+I took this as a clear sign to pause and reflect. Having worked non-stop throughout my adult life, I took this moment as an opportunity to reconnect with myself, restore my inner peace, and focus on long-neglected personal goals—like home renovations, completing long-standing freelance projects, and also finally reading the books I had been piling up for years.
+
+Lately I'm feeling refreshed and with full energy, and I'm so looking forward to jump on my next professional challenge.
+
+
+`Feb 2024 - Jun 2024 `
+__Videocation__
+
+*Senior Frontend Engineer*
+
+I joined as a full-stack web engineer with a strong focus on frontend development, while also contributing across the stack—common in a small, all-hands-on-deck team.
+
+The frontend was built with React (Next.js) and Vite, styled using Tailwind CSS. On the backend, the architecture relied heavily on AWS services: DynamoDB (document-oriented), a smaller RDS instance, and numerous Lambda functions for isolated business logic. CloudFront handled networking and content delivery.
+
+CI/CD pipelines were managed via a private GitHub instance tightly integrated with the deployment process.
+
+
+`Jul 2021 - Dec 2023`
 __Adevinta__
 
 *Senior Frontend Engineer*

@@ -7,43 +7,43 @@ title: Francesc Mallafre Lopez CV
 
 Computing and programming enthusiast with a passion for algorithms, programming, and everything related to technology.
 
-The web and specifically FrontEnd area is my strongest skill, and also my most professionally developed area. I have extensive knowledge of all aspects of web applications, from UI/UX design to backend development, APIs, data management, networking/performance optimization, CI/CD pipelines, and cloud infrastructure.
+My strongest professional domain is **Frontend Webapp Development**, , with comprehensive experience across the full stack: from UI/UX design to backend development, APIs, data structure and access, networking/performance optimization, CI/CD pipelines, and cloud infrastructure.
 
-Professionally I have worked in many companies, each one of them being like a different universe. but I also developed all by myself projects which span the whole spectrum, as a software architect. With that I mean devising all the pieces that will form a whole structure, to solve each particular problem..
+All that sits on an engineer's foundation. Networking, cloud architectures, security protocols, linux, databases... and lately AI, in particular the combination of gpt, claude, gemini, grok, deepseek, local llms, agents, which have become essential in my day to day interactions with the computer. 
 
 ## Contact me
 
-__[franml87@gmail.com](mailto://franml87@gmail.com)__
+📧 [franml87@gmail.com](mailto:franml87@gmail.com)
 
-<a href="tel:+34632928866">__(+34) 632 928 866__</a>
+📞 [+34 632 928 866](tel:+34632928866)
 
-__[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
+🌐 [linkedin.com/in/weisk](https://linkedin.com/in/weisk)
 
-<!-- Having an engineering background, I always had the drive to understand the underlying mechanisms in computing, which always amazed me. To this day I still wonder at the complexity of mechanisms in internet, and how it's even possible that everything works! -->
 
-<!-- From the requirements definition, to drafting an entity relationship model. Designing the Data structures, and deciding if it would make sense to make it relational, non-relational, graph based. Defining API contracts, in order for the different components to collaborate. Designing cloud architectures: what kind of servers are needed, and what capacity are they going to support. Would it require servers, or could it be served from a CDN. Would it require scalability, thus then load balancing policies, and virtual net infrastructure. Using the major providers, that is AWS, Google cloud platform, Azure, Firebase, Digitalocean. -->
+## Technical expertise
 
-## Specialized on
 
-- Javascript, from the inside out, since ES3 to latest specs: async, proxies, modules, lazy loading..
-- Typescript, for type sharing, compile-time errors, and all the goodies
-- React, from early declarative, through classful, to compact functional stateless components. Hooks, effects, providers, ...
-- CSS, in full depth, and many of its dialects: sass, less,...
-- HTML, also in full depth, and many of its dialects: pug/jade, jsx, tsx...
-- React libraries: UI Components, state managers, routing frameworks,
-- React internal APIs: Context, Providers, Suspense/Fallback,
-- Nodejs, also extensively used. To define APIs, services, or just any kind of application.
-- Git,  as the holy grail of code management. Git Flow, as methodology.
-- Linux is the only possible environment when developing, be it native or wsl2
-- Could providers, network architecture and security protocols. AWS, GCP, azure, DO...
-- GraphQL, Apollo server
-- MongoDB, Redis, ... (noSQL databases, document oriented)
-- PosgreSQL, mysql, and more generally Relational Databases.
-- CI/CD, using many tools from jenkins to travis, until most recently github actions and workflows.
-- Testing: Jest, react testing library, cypress for e2e testing, pact.js for integration testing.
-- Bundlers & Pipelines, from Webpack v5, esbuild. Federated modules, monorepos with Lerna, and Turbo.
-- Containerised environments with Docker, compose.
-- Infra/devops with Kubernetes, k8s cli.
+**Frontend**
+
+- JavaScript (ES3 → ESNext), TypeScript
+- React (hooks, context, suspense, routing), HTML, CSS (Sass/Less, responsive design)
+- State management, UI libraries, performance optimisation
+
+**Backend / APIs**
+
+- Node.js (REST, GraphQL, Apollo), Express
+- Databases: MongoDB, Redis, PostgreSQL, MySQL
+- CI/CD pipelines (GitHub Actions, Travis, Jenkins)
+
+**Infrastructure**
+
+- Linux (native & WSL2), Docker, Kubernetes, Cloud (AWS, GCP, Azure, DO)
+- Network architecture, security protocols, Git flow 
+
+**Testing & Tooling**
+
+- Jest, RTL, Cypress, Pact.js
+- Webpack 5, esbuild, Lerna, Turborepo
 
 
 ## Experience
@@ -51,11 +51,13 @@ __[linkedin.com/in/weisk](https://linkedin.com/in/weisk)__
 `Jun 2024 - Present`
 __Sabatical__
 
-After transitioning from a well-established company to a fast-paced startup, unexpected internal changes led to my role not being extended beyond the trial period. I'm happy to provide further context if needed.
+A series of circumstances led me to take a break. I had just transitioned from a well-established, stable company to an exciting, fast-paced startup, where I quickly got deeply involved with an amazing team. Unfortunately, sudden investor changes caused budget cuts, and as the most recent hire, I was let go.
 
-I took this as a clear sign to pause and reflect. Having worked non-stop throughout my adult life, I took this moment as an opportunity to reconnect with myself, restore my inner peace, and focus on long-neglected personal goals—like home renovations, completing long-standing freelance projects, and also finally reading the books I had been piling up for years.
+Around the same time, a family member passed away, leaving behind a software product that required immediate attention. It was a custom ERP system managing the operations of a medical centre — patients, doctors, appointments, insurance integrations — all with high privacy and reliability requirements.  
 
-Lately I'm feeling refreshed and with full energy, and I'm so looking forward to jump on my next professional challenge.
+I worked closely with the centre’s management and the new software provider to ensure a smooth transition: migrating data and historical records, transferring knowledge, restoring API access to third-party insurers, and maintaining operational continuity throughout the process.
+
+Lately I've been feeling ready to rejoin a collaborative software engineering team, contributing hands-on to meaningful project, with a purpose.
 
 
 `Feb 2024 - Jun 2024 `

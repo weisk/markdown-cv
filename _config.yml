@@ -1,2 +1,3 @@
 markdown:   kramdown
 style:  davewhipp
+host: 0.0.0.0

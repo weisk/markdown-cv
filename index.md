@@ -49,15 +49,15 @@ All that sits on an engineer's foundation. Networking, cloud architectures, secu
 ## Experience
 
 `Jun 2024 - Present`
-__Sabatical__
+__Freelancing__
 
-A series of circumstances led me to take a break. I had just transitioned from a well-established, stable company to an exciting, fast-paced startup, where I quickly got deeply involved with an amazing team. Unfortunately, sudden investor changes caused budget cuts, and as the most recent hire, I was let go.
+Following the passing of a close family member, I took responsibility for overseeing the transition of a custom ERP system that supported the day-to-day operations of a medical centre.
 
-Around the same time, a family member passed away, leaving behind a software product that required immediate attention. It was a custom ERP system managing the operations of a medical centre — patients, doctors, appointments, insurance integrations — all with high privacy and reliability requirements.  
+The project evolved into a long-term, phased migration, requiring the legacy system to remain fully operational while individual modules were progressively replaced. Working closely with the centre's management and the incoming software provider, I coordinated the migration of core business functions including patient records, appointment scheduling, practitioner management, billing, historical data, and third-party insurance integrations.
 
-I worked closely with the centre’s management and the new software provider to ensure a smooth transition: migrating data and historical records, transferring knowledge, restoring API access to third-party insurers, and maintaining operational continuity throughout the process.
+Particular attention was required for the centre's billing and insurance workflows, involving complex integrations and reconciliation processes with multiple healthcare insurers, where operational continuity and data integrity were essential throughout the transition.
 
-Lately I've been feeling ready to rejoin a collaborative software engineering team, contributing hands-on to meaningful project, with a purpose.
+With the migration successfully completed, I'm now looking forward to rejoining a collaborative software engineering team where I can contribute to building meaningful software products.
 
 
 `Feb 2024 - Jun 2024 `

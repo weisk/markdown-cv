@@ -3,13 +3,12 @@ layout: cv
 title: Francesc Mallafre Lopez CV
 ---
 # Francesc Mallafre Lopez
-<!-- ## Extract -->
 
 Computing and programming enthusiast with a passion for algorithms, programming, and everything related to technology.
 
-My strongest professional domain is **Frontend Webapp Development**, , with comprehensive experience across the full stack: from UI/UX design to backend development, APIs, data structure and access, networking/performance optimization, CI/CD pipelines, and cloud infrastructure.
+My strongest professional domain is **Frontend Webapp Development**, with comprehensive experience across the full stack: from UI/UX design to backend development, APIs, data structure and access, networking/performance optimization, CI/CD pipelines, and cloud infrastructure.
 
-All that sits on an engineer's foundation. Networking, cloud architectures, security protocols, linux, databases... and lately AI, in particular the combination of gpt, claude, gemini, grok, deepseek, local llms, agents, which have become essential in my day to day interactions with the computer. 
+All of that sits on a solid engineering foundation: networking, cloud architectures, security protocols, Linux, databases, and lately AI (GPT, Claude, Gemini, Grok, DeepSeek, local LLMs, and agents), which have become essential in my day-to-day workflow.
 
 ## Contact me
 
@@ -22,26 +21,21 @@ All that sits on an engineer's foundation. Networking, cloud architectures, secu
 
 ## Technical expertise
 
-
 **Frontend**
-
 - JavaScript (ES3 → ESNext), TypeScript
-- React (hooks, context, suspense, routing), HTML, CSS (Sass/Less, responsive design)
-- State management, UI libraries, performance optimisation
+- React (Hooks, Context, Suspense, Routing), HTML5, CSS3 (Sass/Less, Tailwind, responsive design)
+- State management, UI libraries, performance optimization
 
 **Backend / APIs**
-
 - Node.js (REST, GraphQL, Apollo), Express
 - Databases: MongoDB, Redis, PostgreSQL, MySQL
 - CI/CD pipelines (GitHub Actions, Travis, Jenkins)
 
 **Infrastructure**
-
-- Linux (native & WSL2), Docker, Kubernetes, Cloud (AWS, GCP, Azure, DO)
-- Network architecture, security protocols, Git flow 
+- Linux (native & WSL2), Docker, Kubernetes, Cloud (AWS, GCP, Azure, DigitalOcean)
+- Network architecture, security protocols, Git flow
 
 **Testing & Tooling**
-
 - Jest, RTL, Cypress, Pact.js
 - Webpack 5, esbuild, Lerna, Turborepo
 
@@ -51,183 +45,65 @@ All that sits on an engineer's foundation. Networking, cloud architectures, secu
 `Jun 2024 - Present`
 __Freelancing__
 
-Following the passing of a close family member, I took responsibility for overseeing the transition of a custom ERP system that supported the day-to-day operations of a medical centre.
+* Following the passing of a close family member, took full ownership of overseeing the transition of a custom ERP system supporting day-to-day operations for a medical centre.
+* Orchestrated a long-term, phased migration, ensuring the legacy system remained fully operational while progressively replacing individual modules.
+* Coordinated core business function migrations including patient records, appointment scheduling, practitioner management, billing, historical data, and complex third-party healthcare insurance integrations.
+* Ensured strict data integrity and zero operational downtime during financial reconciliation processes.
 
-The project evolved into a long-term, phased migration, requiring the legacy system to remain fully operational while individual modules were progressively replaced. Working closely with the centre's management and the incoming software provider, I coordinated the migration of core business functions including patient records, appointment scheduling, practitioner management, billing, historical data, and third-party insurance integrations.
+`Feb 2024 - Jun 2024`
+__Videocation__ — *Senior Frontend Engineer*
 
-Particular attention was required for the centre's billing and insurance workflows, involving complex integrations and reconciliation processes with multiple healthcare insurers, where operational continuity and data integrity were essential throughout the transition.
-
-With the migration successfully completed, I'm now looking forward to rejoining a collaborative software engineering team where I can contribute to building meaningful software products.
-
-
-`Feb 2024 - Jun 2024 `
-__Videocation__
-
-*Senior Frontend Engineer*
-
-I joined as a full-stack web engineer with a strong focus on frontend development, while also contributing across the stack—common in a small, all-hands-on-deck team.
-
-The frontend was built with React (Next.js) and Vite, styled using Tailwind CSS. On the backend, the architecture relied heavily on AWS services: DynamoDB (document-oriented), a smaller RDS instance, and numerous Lambda functions for isolated business logic. CloudFront handled networking and content delivery.
-
-CI/CD pipelines were managed via a private GitHub instance tightly integrated with the deployment process.
-
+* Built and maintained a modern React (Next.js) and Vite frontend styled with Tailwind CSS in a fast-paced, all-hands-on-deck team.
+* Developed scalable backend architecture leveraging AWS services, including DynamoDB, RDS, and isolated Lambda functions for business logic, optimized via CloudFront.
+* Managed secure and automated CI/CD pipelines integrated tightly with a private GitHub instance.
 
 `Jul 2021 - Dec 2023`
-__Adevinta__
+__Adevinta__ — *Senior Frontend Engineer*
 
-*Senior Frontend Engineer*
-
-I've worked in Adevinta as a frontend engineer, mainly to modernize and maintain the Web UI used to configure content moderation within all marketplaces of Adevinta. To provide some more context, the main business in Adevinta is basically online marketplaces, for buying/selling used items. Think of ebay as an example.
-
-You can imagine how huge is the volume of generated user content, and thus how essential is to minimise the amount of spam or illegal content that gets published. For this, adevinta has a series of machine learning modules, each one performing a particular task, that work together in order to determine if one piece of content is spam or not. That prediction comes in the form of a score, a percentage, that allows the users of the platform - fraud analysts, to choose the threshold at which the content can be 'automatically' moderated, and thus the rest will fall to manual moderation.
-
-And then the challenge is unifying all these tools in a single process, intuitive, that abstracts away all the details and allows for non-tech savvy users to understand what's going on, and even to more advanced users to tweak those parameters. All this is implemented in a web application, which has been my main focus of work in adevinta.
-
-One of my biggest and most challenging projects I've faced is this: to migrate an old architecture of a series of micro apps, in different repositories, into a monorepo that contains everything within. From shared libraries, like the UI components, common libraries for certain functionalities, and the different modules that comprise each route.
-
-There is one main React app wrapper, the Shell, that does all the necessary imports and defines the routes, and then all the different modules: shared components, libs, and modules. All this is bundled in chunks, that are loaded on demand, using dynamic imports, depending on the route loaded.
-
-It is all coded through the latest React APIs (up to v18), using a unified type system with typescript, and bundled with Webpack module federation.
-
-The CI/CD is implemented in different layers, of testing (react testing library, cypress, sonar), peer-reviewing (enforced through github PR policies), and deployment to different stages (using github actions workflows).
-
-Another big project I handled during my time here was, refactoring all 3rd party api calls into a main single API implemented with GraphQL, and the Apollo framework. This in itself is a huge different topic that deserves another full document, but to not extend myself too much, I will just outline the main points of it:
-
-  - Defines a single gateway between the internet and all the internal APIs
-  - Centralizes all 3rd party APIs into a single one,
-  - Acts as the main security layer, with Authentication and Authorisation layers
-  - Provides a single source of truth for the data shape, through the graphql type system, which is mapped directly to a typescript type definition
-
+* Modernized and maintained the global Web UI used to configure content moderation and automated spam detection algorithms across massive-scale online marketplaces.
+* Architected and executed a major migration from a multi-repository micro-apps setup into a unified monorepo using Webpack Module Federation and dynamic code-splitting.
+* Refactored disparate third-party API integrations into a centralized, secure GraphQL and Apollo gateway layer featuring robust authentication and authorization.
+* Enforced high code quality standards through comprehensive CI/CD pipelines utilizing React Testing Library, Cypress, Sonar, and strict GitHub PR policies.
 
 `Sep 2019 - Dec 2020`
-__marketScape__
+__marketScape__ — *Software Engineer*
 
-*Software Engineer*
-
-This is a saas used for gathering and collecting data, in order to gain intelligence, reporting and visibility of various topics. This service was actually used by High level agencies, or government organisms, not open to end users, since it dealt mainly with fraud / illegal activities data acquisition and recognaissance. But to give an overview, the data analysed would be things like: fashion market trends, consumption of alcohol, music reproductions, drug consumption, religious fanatism, cross-referenced with social media activities.
-
-My role here is was implementing the frontend, and designing the architecture for new features. A big chunk of my work was porting an outdated server-side rendered architecture to a more modular, interactive webapp. Using angular since that was a client requirement.
-
-I also work on abstracting inefficient legacy implementations into micro-services oriented API, that could come in NodeJS simple apps, to stateless Lambda functions.
+* Spearheaded the frontend architecture and implementation for a high-security SaaS platform utilized by government agencies for data intelligence and reconnaissance.
+* Successfully ported an outdated server-side rendered architecture into a modular, highly interactive Angular web application.
+* Abstracted inefficient legacy implementations into scalable, stateless microservice APIs using Node.js and AWS Lambda.
 
 `Feb 2019 - Aug 2019`
-__Kasaz.com__
+__Kasaz.com__ — *Senior Frontend Developer*
 
-*Senior Frontend Developer*
-
-Joined this little startup that aims at the real estate sector in Barcelona.
-
-My task was mainly to refactor the public facing products, in order to increase the sites 'crawlability' by search engines, and also to make a pleasant User Experience that loaded fast, and looked beautifully.
-
-Conversion from a server-side rendering server to a bundled Multi-Page application, keeping the main business logic on a small package. It was important here to keep many parts of the site pre-rendered, since the SEO ranks were essential for the bussiness. We implemented a combo of SSR + hydration once loaded into a browser.
-
-As mentioned, there was also a big emphasis on maintaining and improving SEO scores across different engines. That involved a lot of studying the particular quirks of each provider, but mainly Google, and keeping track of what google considers good / bad: avoid hidden content, work on genuine content, avoid duplication of links, define good site maps, use proper semantic HTML, render responsive sites that work on any screen size, etc.
+* Refactored public-facing real estate products to maximize search engine crawlability and organic SEO rankings.
+* Engineered a high-performance hybrid architecture combining Server-Side Rendering (SSR) with client-side hydration for lightning-fast load times.
+* Implemented best practices for search engine optimization across major search providers, optimizing semantic HTML and eliminating hidden content or link duplication.
 
 `Oct 2017 - Nov 2018`
-__Haufe-Umantis AG Swiss__
+__Haufe-Umantis AG Swiss__ — *Senior Frontend Developer*
 
-*Senior Frontend Developer*
-
-Working as a frontend developer expert in technologies such as React (+Redux,Router,..) and Angular(1,2,4).
-
+* Delivered robust enterprise frontend solutions as a framework expert specializing in React and Angular ecosystems.
 
 `Feb 2016 - Mar 2017`
-__Propertyfinder__
+__Propertyfinder__ — *Senior Frontend Developer*
 
-*Senior Frontend Developer*
-
-Propertyfinder is a leading real estate company in Dubai.
-
-I was hired as a Javascript developer, in a team of 4 people including me. My role was initially to work closely with the team lead to study their current infrastructure to find potential bottlenecks and improve the whole stack with a more modern philosophy.
-
-This was accomplished on 4 main levels:
-
-1.- Refactored an old PHP server-side rendered codebase towards a dynamic - client side rendered with Javascript and React,
-
-2.- Migrating a huge monolith architecture into single resposibility microservices. One example is the implementation of a microservice that dealt with everything related to image operations: resizing, conversion, edition, formatting, watermarking, etc.
-
-3.- Implement testing for the frontend, on two levels: unit-testing for dumb function behaviour, using mocha and chai for assertions, and end-to-end testing for browser expectations; using JSDom to render pages.
-
-4.- Automate the frontend code building process: Using gulp to gather all dependencies, concatenate all the javascript files, compile Sass to css, render html templates, etc.
-
-I also led a small team of 3 frontend developers on a side project, which could be written from scratch and allowed for experimentation. Made entirely on React+Redux, with Jest+Enzyme for component/e2e testing.
-
+* Modernized a legacy PHP server-side codebase into a dynamic, client-side React architecture for a leading Dubai real estate platform.
+* Decomposed a monolith into dedicated microservices, including a specialized image-processing service handling resizing, conversion, watermarking, and formatting.
+* Established comprehensive frontend testing protocols using Mocha, Chai, and JSDom, and automated the build pipeline using Gulp and Sass.
 
 `Mar 2014 - Jan 2015`
-__Cloud Digital__
+__Cloud Digital__ — *Front End Lead Developer*
 
-*Front End Lead Developer*
-
-In charge of the development of the front-end of a media distribution platform. Built on top of Angular.JS,
-Bootstrap for the layout and Google Material for design components. Using Coffeescript to produce quality
-Javascript code. Bower for dependency management. Grunt for wiring assets and libraries, building and
-cleaning the code, and delivering deployable artifacts. Several Javascript libraries to leverage specific
-functionalities, like Lodash (former Underscore.js) , Jquery, Moment.js, Growl, Flow.js, ngTagsInput ...
-Built the marketing site at http://www.cloud.xxx
-Using Git & Github for version control. JIRA as a sprint planner & task reporting. Confluence as a team wiki.
-Also built the staging & production systems on Amazon Web Services. VPC as the infrastructure, OpsWorks
-for resource provisioning & code deploying, Route53 for domain management, S3 as the storage layer... AndThis resume is made with CVwizard.com.
-CloudFlare in front of everything to speed up transfers.
-Integrated a error tracking & logging system based on Sentry using its javascript client Raven.js. We
-managed to log all javascript errors to an interface knowing all the debug info: error culprit, logged user,
-referrer URL, server response, along with the javascript stack trace.
+* Led frontend development for a media distribution platform built on AngularJS, Bootstrap, and Google Material.
+* Configured robust AWS infrastructure (VPC, OpsWorks, Route53, S3, CloudFlare) and integrated Sentry (Raven.js) for real-time error tracking and debugging.
 
 `Aug 2013 - Jan 2014`
-__Scytl__
+__Scytl__ — *Javascript Developer*
+* Developed interactive frontend features using AngularJS and modern JavaScript libraries.
 
-*Javascript Developer*
-
-Worked as a FrontEnd Javascript developer, using mainly Angular.js , jQuery , underscore and more libraries.
-
-`Jul 2011 - Jan 2013)`
-__Roche Diagnostics__
-
-*Front End Technology Programmer*
-
-Working on a Laboratory Information System (LIS) for hospitals and healthcare professionals. Here started my journey in the professional programming world, and the first time I learned about Javascript.
-
-Full migration from a .NET client/server architecture, to web-based architecture, fully HTML5/CSS3
-compliant. Design of screens , tables, gadgets , graphics , charts , etc.. for the application , mainly using the combination of HTML5/CSS3 & javascript, SVG .
-
-
-<!-- ## PROJECTS
-
-I have been fiddling with web technologies since very young, becoming more experienced through the
-years and later accepting gigs and contracts with clients. In the projects section you can see a portfolio of products I built, mainly as a freelancer or some of them as a cofounder.
-
-### https://raiseyourwebsite.com
-This is a personal project, in collaboration with a designer partner, using cutting edge technologies: It's an
-SPA built with React that sits on top an Express.js server, using ES6 compiled with webpack, it's fully
-responsive (desktop+tablet+mobile), and it is also a Progressive Web App with a service worker which
-allows it to work offline. It does fancy things like server side rendering with async data fetching. TechnologicThis resume is made with CVwizard.com.
-key points are: react, react router v4, redux, CSS Modules, ES6 javascript, isomorphic rendering, d3 graph
-visualization, mail server, and deployed using PM2 and git.
-
-
-### https://schoolhouse.io/
-Schoolhouse is a healthcare knowledge sharing platform and social network. It is meant for medical
-students to get access to quality information, as well as healthcare professionals to keep up with the latest
-improvements. It is designed to split the knowledge in all areas of the medicine, from a top-bottom
-perspective, and splitted by the different approaches it may have: Medical, Surgical, Biomedical,
-Pharmacological, and Physiological. Currently it's on a private beta with Universitat Internacional de
-Catalunya (UIC), where it's part of an experiment to score the students using their contributions on the
-platform. A more thorough explanation can be done, if requested.
-Also, I can provide code and demos.
-
-
-### http://peer2.cash
-This is a platform to allow exchange from crypto currencies to fiat currencies, .e.g.: 1BTC to 400$. The SPA is a
-minimalistic panel that displays a trading form which can be used to obtain an offer, and fullfill the
-requested information to accept the offer. Coded in AngularJS mainly. There are some algorithms in the
-backend to perform crawling of bitcoin markets and crush the data to obtain suitable offers at every
-request. More info can be described as per request.
-https://stratagems.syngular.es
-Prototype landing page for a project that died shortly after its birth. It was meant to be a web-crawler, user
-analytics, SEO all around product. With a subscription model type, users could get insights on their preferred
-domains, providing valuable data as to increase search engine presence and user visitors.
-Several private projects
-Worked on internal managing webapps, from ERP and CRM to CMS-type projects. More info available on
-request. -->
+`Jul 2011 - Jan 2013`
+__Roche Diagnostics__ — *Front End Technology Programmer*
+* Contributed to the full-scale web migration of a hospital Laboratory Information System (LIS) from a .NET client/server model to a modern HTML5/CSS3 and SVG web architecture.
 
 
 ## Education
@@ -237,17 +113,13 @@ __Ingeniería superior en Informática (Computer Science Engineering)__
 
 *Universitat Autònoma de Barcelona*
 
-This is equivalent to the current Degree + Master.
-
 
 ## Codes
 
-Things I made, borrowed, want to learn, or just felt the need to keep secure.
-
-- github.com/weisk
-- gist.github.com/weisk
-- gitlab.com/weisk
-- bitbucket.org/franml/
-- jsfiddle.net/user/weisk/fiddles/
-- codepen.io/weisk/
-- codesandbox.io/u/weisk/sandboxes
+- [github.com/weisk](https://github.com/weisk)
+- [gist.github.com/weisk](https://gist.github.com/weisk)
+- [gitlab.com/weisk](https://gitlab.com/weisk)
+- [bitbucket.org/franml/](https://bitbucket.org/franml/)
+- [jsfiddle.net/user/weisk/fiddles/](https://jsfiddle.net/user/weisk/fiddles/)
+- [codepen.io/weisk/](https://codepen.io/weisk/)
+- [codesandbox.io/u/weisk/sandboxes](https://codesandbox.io/u/weisk/sandboxes)

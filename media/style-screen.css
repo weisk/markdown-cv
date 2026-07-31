@@ -17,10 +17,10 @@ body #main {
 #main > p,
 #main > ul {
 	max-width: 768px;
-	width: 100%;
 }
 
 p {
+	position: relative;
 	margin: 0 0 1em 25%;
 	line-height: 1.5em;
 }

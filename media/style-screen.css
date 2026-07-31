@@ -1,39 +1,36 @@
 body {
-	line-height: 1.5em;
-	/*also written as...  font: normal normal 400 100%/1.5em;*/
-	font-family: Apercu Pro, Segoe UI, sans-serif;
+	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	font-size: 16px;
-	margin-top: 1.5em;
-	margin-left: 1em;
+	line-height: 1.5em;
+	margin: 1.5em 0 0 1em;
 	max-width: 100vw;
 	overflow-x: hidden;
 }
 
 body #main {
 	max-width: 100%;
-	white-space: normal;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-#main > p, ul {
-  max-width: 768px;
-  width: 100%;
+#main > p,
+#main > ul {
+	max-width: 768px;
+	width: 100%;
 }
 
 p {
 	position: relative;
 	left: 25%;
-	margin-bottom: 1em;
-	margin-right: 0;
+	margin: 0 0 1em;
 	line-height: 1.5em;
 }
 
 code {
-	font-family: Monaco, Menlo, consolas, monospace,sans-serif;
+	font-family: Lucia Sans Unicode, monospace;
 	font-weight: bold;
-	color: #9A9;
+	color: #6b8460;
 }
 
 p code {
@@ -42,24 +39,11 @@ p code {
 	bottom: 0;
 }
 
-
 ul {
 	position: relative;
 	left: 25%;
-	margin-bottom: 1.5em;
-	margin-top: -0.5em;
+	margin: -0.5em 0 1.5em;
 }
-
-/*uncomment to get dashes in the list*/
-/*li:before {
-	content: "-";
-	position: relative;
-	left: -0.25em;
-}
-
-li {
-	text-indent: .3em hanging;
-}*/
 
 li ul {
 	position: relative;
@@ -68,63 +52,62 @@ li ul {
 	margin-top: 0.25em;
 }
 
-h1,h2,h3,h4 {
-	font-family: Apercu Pro, Segoe UI, sans-serif;
+h1, h2, h3, h4 {
+	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	width: 80%;
-  font-weight: 600;
+	font-weight: 600;
 }
 
 h1 {
-	text-align: left;
-	font-size: 3em;
-	line-height: 1em;
 	position: relative;
 	left: 25%;
-  	margin: 1.5rem 0 1rem 0;
+	margin: 1.5rem 0 1rem;
+	font-size: 3em;
+	line-height: 1em;
+	text-align: left;
 }
 
-h1+p {
-	/*subtitle*/
+h1 + p {
+	/* subtitle */
 	font-style: italic;
 	font-size: 110%;
 }
 
 h2 {
-	font-size: 1.1em;
-	color: #c7462f;
-	margin-top: 1.5em;
 	position: relative;
 	top: 1.4em;
-	text-align: right;
+	margin-top: 1.5em;
 	width: 20%;
+	font-size: 1.1em;
 	line-height: 1.5em;
+	color: #c7462f;
+	text-align: right;
 }
 
 h3 {
-	font-size: 1em;
-	line-height: 2em;
 	position: relative;
 	top: 1.7em;
-	text-align: right;
 	width: 20%;
+	font-size: 1em;
+	line-height: 2em;
+	text-align: right;
 }
 
 a {
 	color: inherit;
-	/*text-decoration:none*/
 }
 
 a:hover {
-	color:#39f
+	color: #39f;
 }
 
 #webaddress {
-	margin-top: 1em;
 	position: relative;
 	left: 25%;
-	color: #bc412b;
-	font-family: Monaco,Menlo,monospace,sans-serif;
+	margin-top: 1em;
+	font-family: Monaco, Menlo, monospace;
 	font-size: 100%;
+	color: #bc412b;
 }
 
 #webaddress a {
@@ -132,7 +115,6 @@ a:hover {
 }
 
 em {
-	/* font-weight: bold; */
 	font-style: italic;
 }
 
@@ -145,3 +127,38 @@ strong {
 	display: none;
 }
 
+@media (max-width: 640px) {
+	body {
+		margin: 1em 1em 0;
+	}
+
+	p,
+	ul,
+	h1,
+	#webaddress {
+		left: 0;
+	}
+
+	h1 {
+		font-size: 2em;
+		width: 100%;
+	}
+
+	h2,
+	h3 {
+		top: 0;
+		width: 100%;
+		text-align: left;
+		margin-top: 1.5em;
+	}
+
+	h3 {
+		line-height: 1.3em;
+	}
+
+	p code {
+		position: static;
+		display: block;
+		margin-top: 0.25em;
+	}
+}

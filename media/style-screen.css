@@ -17,49 +17,49 @@ body #main {
 	flex-wrap: wrap;
 }
 
+#main > p, ul {
+  max-width: 768px;
+  width: 100%;
+}
+
 p {
 	position: relative;
 	left: 25%;
-	margin-bottom: 0.7em;
+	margin-bottom: 1em;
 	margin-right: 0;
-	width: 55%;
+	line-height: 1.5em;
 }
 
 code {
-	font: normal normal;
-	font-size: 90%;
-	/*line-height: 1em;*/
-	font-family: Monaco,Menlo,monospace,sans-serif;
-	color: #aaa;
+	font-family: Monaco, Menlo, consolas, monospace,sans-serif;
+	font-weight: bold;
+	color: #9A9;
 }
 
 p code {
 	position: absolute;
-	text-align: right;
 	right: 0;
+	bottom: 0;
 }
 
 
 ul {
 	position: relative;
 	left: 25%;
-	width: 75%;
 	margin-bottom: 1.5em;
 	margin-top: -0.5em;
 }
 
 /*uncomment to get dashes in the list*/
-li:before {
+/*li:before {
 	content: "-";
 	position: relative;
 	left: -0.25em;
 }
 
 li {
-	padding-left: 1.25em;
-	text-indent: -1.25em;
-	max-width: 75%;
-}
+	text-indent: .3em hanging;
+}*/
 
 li ul {
 	position: relative;
@@ -97,6 +97,7 @@ h2 {
 	top: 1.4em;
 	text-align: right;
 	width: 20%;
+	line-height: 1.5em;
 }
 
 h3 {

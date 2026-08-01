@@ -1,12 +1,12 @@
 @page {
-	margin: 2cm;
+	margin: 1.5cm;
 }
 
 body {
 	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	font-size: 16px;
 	line-height: 1.5em;
-	margin: 1.5em 0 0 1em;
+	margin: 1.5em 0 0 0;
 }
 
 body #main {
@@ -22,7 +22,7 @@ body #main {
 
 p {
 	position: relative;
-	margin: 0 0 1em 25%;
+	margin: 0 0 1em 20%;
 	line-height: 1.5em;
 	orphans: 3;
 	widows: 3;
@@ -35,23 +35,15 @@ code {
 }
 
 p code {
-	position: absolute;
-	right: 0;
-	bottom: 0;
+	float: right;
+	margin-left: 0.5em;
 }
 
 ul {
-	margin: -0.5em 0 1.5em 25%;
+	margin: -0.5em 0 1.5em 20%;
 }
 
-li ul {
-	position: relative;
-	left: 0;
-	width: 100%;
-	margin-top: 0.25em;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h4 {
 	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	width: 80%;
 	font-weight: 600;
@@ -59,11 +51,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	width: 70%;
-	margin: 1.5rem 0 1rem 25%;
-	font-size: 3em;
+	width: 78%;
+	margin: 0.5em 0 0.333em 20%;
+	font-size: 2.6em;
 	line-height: 1em;
 	text-align: left;
+	white-space: nowrap;
 }
 
 h1 + p {
@@ -77,34 +70,17 @@ h2 {
 	top: 1.4em;
 	margin-top: 1.5em;
 	width: 20%;
-	font-size: 1.1em;
+	box-sizing: border-box;
+	padding-right: 1em;
+	white-space: nowrap;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	color: #c7462f;
 	text-align: right;
 }
 
-h3 {
-	position: relative;
-	top: 1.7em;
-	width: 20%;
-	font-size: 1em;
-	line-height: 2em;
-	text-align: right;
-}
-
 a {
 	color: inherit;
-}
-
-#webaddress {
-	margin: 1em 0 0 25%;
-	font-family: Monaco, Menlo, monospace;
-	font-size: 100%;
-	color: #bc412b;
-}
-
-#webaddress a {
-	text-decoration: none;
 }
 
 em {
@@ -113,9 +89,9 @@ em {
 
 strong {
 	font-weight: bold;
-	font-size: 1.2em;
 }
 
-#address {
-	display: none;
+p > strong:only-child,
+p code + strong {
+	font-size: 1.2em;
 }

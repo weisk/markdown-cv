@@ -19,7 +19,7 @@ All of that sits on a solid engineering foundation: networking, cloud architectu
 🌐 [linkedin.com/in/weisk](https://linkedin.com/in/weisk)
 
 
-## Technical expertise
+## Tech skills
 
 **Frontend**
 - JavaScript (ES3 → ESNext), TypeScript

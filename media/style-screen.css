@@ -1,146 +1,123 @@
 body {
-	line-height: 1.5em;
-	/*also written as...  font: normal normal 400 100%/1.5em;*/
-	font-family: Apercu Pro, Segoe UI, sans-serif;
+	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	font-size: 16px;
-	margin-top: 1.5em;
-	margin-left: 1em;
+	line-height: 1.5em;
+	margin: 1.5em 0 0 1em;
 	max-width: 100vw;
 	overflow-x: hidden;
 }
 
 body #main {
 	max-width: 100%;
-	white-space: normal;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 }
 
+#main > p,
+#main > ul {
+	max-width: 768px;
+}
+
 p {
 	position: relative;
-	left: 25%;
-	margin-bottom: 0.7em;
-	margin-right: 0;
-	width: 55%;
+	margin: 0 0 1em 25%;
+	line-height: 1.5em;
 }
 
 code {
-	font: normal normal;
-	font-size: 90%;
-	/*line-height: 1em;*/
-	font-family: Monaco,Menlo,monospace,sans-serif;
-	color: #aaa;
+	font-family: Monaco, Menlo, Consolas, monospace;
+	font-weight: bold;
+	color: #9a9;
 }
 
 p code {
-	position: absolute;
-	text-align: right;
-	right: 0;
+	float: right;
+	margin-left: 0.5em;
 }
-
 
 ul {
-	position: relative;
-	left: 25%;
-	width: 75%;
-	margin-bottom: 1.5em;
-	margin-top: -0.5em;
+	margin: -0.5em 0 1.5em 25%;
 }
 
-/*uncomment to get dashes in the list*/
-li:before {
-	content: "-";
-	position: relative;
-	left: -0.25em;
-}
-
-li {
-	padding-left: 1.25em;
-	text-indent: -1.25em;
-	max-width: 75%;
-}
-
-li ul {
-	position: relative;
-	left: 0;
-	width: 100%;
-	margin-top: 0.25em;
-}
-
-h1,h2,h3,h4 {
-	font-family: Apercu Pro, Segoe UI, sans-serif;
+h1, h2, h4 {
+	font-family: "Apercu Pro", "Segoe UI", sans-serif;
 	width: 80%;
-  font-weight: 600;
+	font-weight: 600;
 }
 
 h1 {
-	text-align: left;
+	width: 70%;
+	margin: 1.5rem 0 1rem 25%;
 	font-size: 3em;
 	line-height: 1em;
-	position: relative;
-	left: 25%;
-  	margin: 1.5rem 0 1rem 0;
+	text-align: left;
 }
 
-h1+p {
-	/*subtitle*/
+h1 + p {
+	/* subtitle */
 	font-style: italic;
 	font-size: 110%;
 }
 
 h2 {
-	font-size: 1.1em;
-	color: #c7462f;
-	margin-top: 1.5em;
 	position: relative;
 	top: 1.4em;
-	text-align: right;
+	margin-top: 1.5em;
 	width: 20%;
-}
-
-h3 {
-	font-size: 1em;
-	line-height: 2em;
-	position: relative;
-	top: 1.7em;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: #c7462f;
 	text-align: right;
-	width: 20%;
 }
 
 a {
 	color: inherit;
-	/*text-decoration:none*/
 }
 
 a:hover {
-	color:#39f
-}
-
-#webaddress {
-	margin-top: 1em;
-	position: relative;
-	left: 25%;
-	color: #bc412b;
-	font-family: Monaco,Menlo,monospace,sans-serif;
-	font-size: 100%;
-}
-
-#webaddress a {
-	text-decoration: none;
+	color: #39f;
 }
 
 em {
-	/* font-weight: bold; */
 	font-style: italic;
 }
 
 strong {
 	font-weight: bold;
+}
+
+p > strong:only-child,
+p code + strong {
 	font-size: 1.2em;
 }
 
-#address {
-	display: none;
-}
+@media (max-width: 640px) {
+	body {
+		margin: 1em 1em 0;
+	}
 
+	p,
+	ul {
+		margin-left: 0;
+	}
+
+	h1 {
+		margin-left: 0;
+		font-size: 2em;
+		width: 100%;
+	}
+
+	h2 {
+		top: 0;
+		width: 100%;
+		text-align: left;
+		margin-top: 1.5em;
+	}
+
+	p code {
+		float: none;
+		display: block;
+		margin-top: 0.25em;
+	}
+}
